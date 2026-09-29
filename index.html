@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="progress"></div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#hero" id="brand"></a>
+    <div class="links">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </div>
+    <a class="btn primary dlcv navcta" href="#contact">CV</a>
+  </div>
+</nav>
+
+<header id="hero">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="role" id="role"></span>
+      <h1 id="name"></h1>
+      <p id="intro"></p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn dlcv" href="#contact">Download CV</a>
+      </div>
+      <div class="stats" id="stats"></div>
+    </div>
+    <div class="hero-art">
+      <div class="frame" id="frame">
+        <div class="dots"></div>
+        <div class="back"></div>
+        <div class="ph"><img id="photo" alt=""></div>
+        <div id="badges"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <div class="two">
+      <div id="aboutText"></div>
+      <div class="facts" id="facts"></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Technical skills</h2>
+    <div class="skills" id="skillList"></div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div id="projectList"></div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2>Education</h2>
+    <div class="edu" id="eduCards"></div>
+    <div class="card" style="margin-top:20px" id="achieve"></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2 id="cHeading"></h2>
+    <p class="lede" id="cText"></p>
+    <a class="mail" id="cMail"></a>
+    <div class="socials" id="socials"></div>
+    <footer id="footer"></footer>
+  </div>
+</section>
+
+<dialog id="cvdlg" aria-labelledby="dtitle">
+  <div class="dhead"><h3 id="dtitle">Curriculum vitae</h3><button class="x" type="button" id="dclose" aria-label="Close">&times;</button></div>
+  <div class="choices">
+    <button class="choice" type="button" id="optView">
+      <svg viewBox="0 0 24 24"><path d="M1.5 12S5.5 5 12 5s10.5 7 10.5 7-4 7-10.5 7S1.5 12 1.5 12z"/><circle cx="12" cy="12" r="3"/></svg>
+      <span><b>Show CV</b><small>Read it here on the page</small></span>
+    </button>
+    <button class="choice" type="button" id="optDl">
+      <svg viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg>
+      <span><b>Download CV</b><small>Save the PDF to your device</small></span>
+    </button>
+  </div>
+  <div class="viewer">
+    <div class="vbar">
+      <button class="btn" type="button" id="vback">Back</button>
+      <button class="btn primary" type="button" id="vdl">Download CV</button>
+    </div>
+    <div class="vscroll">
+      <iframe id="cvframe" title="Curriculum vitae"></iframe>
+      <p class="vnote">If the CV does not show on your phone, <a id="cvopen" target="_blank" rel="noopener noreferrer">open it in a new tab</a>.</p>
+    </div>
+  </div>
+</dialog>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
