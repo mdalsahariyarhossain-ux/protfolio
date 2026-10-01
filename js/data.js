@@ -10,7 +10,7 @@ const DATA = {
 
   // Small numbers under the buttons
   stats: [
-    { value: "2", label: "Full stack projects" },
+    { value: "3", label: "projects" },
     { value: "6", label: "Languages" },
     { value: "B.Tech", label: "Computer Science" },
   ],
@@ -84,6 +84,35 @@ const DATA = {
         "Saved users, messages and chat history in MongoDB with Mongoose.",
       ],
     },
+    {
+      title: "Crypto Security & Performance Analyzer",
+      subtitle: "RSA vs ECC cryptography benchmarking platform",
+      visual: "crypto",
+      tags: [
+        "Next.js",
+        "React.js",
+        "Tailwind CSS",
+        "RSA",
+        "ECC",
+        "Web Crypto API"
+      ],
+      links: [
+        {
+          label: "GitHub",
+          url: "https://github.com/mdalsahariyarhossain-ux/crypto.git"
+        },
+        // { label: "Live demo", url: "https://your-site.com" },
+      ],
+      points: [
+        "Built an interactive cryptography platform to compare RSA and ECC security algorithms through real-time performance testing.",
+        "Implemented RSA key sizes of 1024, 2048 and 3072 bits, along with ECC P-256 and P-384 curves.",
+        "Benchmarked key generation, encryption, decryption, digital signature and signature verification operations.",
+        "Ran multiple benchmark iterations and calculated average execution times for reliable performance comparison.",
+        "Created interactive performance charts and workload analysis views to visualize cryptographic performance.",
+        "Added encryption and decryption tools for testing messages and files with a modern responsive interface.",
+        "Developed an AI Advisor concept to analyze RSA and ECC characteristics and provide algorithm-selection guidance.",
+      ],
+    },
   ],
 
   /* ---------- Education ---------- */
@@ -105,7 +134,7 @@ const DATA = {
   /* ---------- Contact ---------- */
   contact: {
     heading: "Let's connect",
-    text: "Open to internships, full stack roles and collaborations.",
+    text: "Open to internships, full stack roles and freelance opportunities. Feel free to reach out via email, LinkedIn or GitHub.",
     email: "mdalsahariyarhossain@gmail.com",
     phone: "+91 7550971160",
     linkedin: "https://www.linkedin.com/in/md-al-sahariyar-hossain-752220357/",
